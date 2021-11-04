@@ -1,5 +1,7 @@
 # JSON Formatter
 
+[Try it here!](https://json-formatter.vercel.app/)
+
 A dead simple JSON formatting utility for the browser.
 
 I built this project to learn the basics of Next.js and tailwindcss.
