@@ -7,7 +7,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col items-center justify-between mx-6 my-4 text-sm font-light">
+    <footer className="flex flex-col items-center justify-between m-6 text-sm font-light">
       <div className="flex items-center">
         <AiOutlineCopyrightCircle />
         <p className="mx-2 text-gray-800 sm:py-0">

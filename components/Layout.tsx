@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "./footer/Footer";
+import Footer from "./Footer";
 
 const Layout: React.FC = ({ children }) => {
   return (
