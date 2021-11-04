@@ -22,6 +22,7 @@ const Renderer: React.FC<RendererProps> = ({ json, indentation = 2 }) => {
       setFormattedText(formatted);
       setError(undefined);
     } catch (error: any) {
+      setFormattedText("");
       setError(error.message);
     }
   }, [indentation, json]);
@@ -31,7 +32,11 @@ const Renderer: React.FC<RendererProps> = ({ json, indentation = 2 }) => {
       {error && (
         <p className="text-red-400 max-w-full whitespace-pre-wrap">{error}</p>
       )}
-      <p>{formattedText}</p>
+      <textarea
+        className="bg-white placeholder-gray-400 w-full h-full resize-none font-mono"
+        disabled
+        value={formattedText}
+      />
     </div>
   );
 };
