@@ -4,6 +4,7 @@ import {
   AiOutlineGithub,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import { BiCodeAlt } from "react-icons/bi";
 
 const Footer: React.FC = () => {
   return (
@@ -15,6 +16,18 @@ const Footer: React.FC = () => {
         </p>
       </div>
       <div className="flex flex-row my-2">
+        <div className="flex items-center text-gray-600 hover:text-blue-500">
+          <BiCodeAlt />
+          <a
+            href="https://github.com/haroldadmin/json-formatter"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-2"
+            aria-label="Source Code"
+          >
+            Source Code
+          </a>
+        </div>
         <div className="flex items-center text-gray-600 hover:text-blue-500">
           <AiOutlineGithub />
           <a
