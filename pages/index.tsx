@@ -10,10 +10,6 @@ const Home: NextPage = () => {
   const [unformattedText, setUnformattedText] = useState("");
   const [indentation, setIndentation] = useState(2);
 
-  const onTextReset = () => {
-    setUnformattedText("");
-  };
-
   return (
     <Layout>
       <div className="p-4 md:p-8">
