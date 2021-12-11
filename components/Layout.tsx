@@ -4,6 +4,7 @@ import Footer from "./Footer";
 const Title = "JSON Formatter";
 const Description =
   "Dead simple tool to format (small) JSON files in the browser";
+const Url = "https://json-formatter.haroldadmin.com";
 
 const Layout: React.FC = ({ children }) => {
   return (
@@ -15,7 +16,8 @@ const Layout: React.FC = ({ children }) => {
         <meta name="description" content={Description} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={Title} />
-        <meta property="og:image" content="/preview.png" />
+        <meta property="og:url" content={Url} />
+        <meta property="og:image" content={Url + "/preview.png"} />
         <meta property="og:description" content={Description} />
         <title>{Title}</title>
       </Head>
